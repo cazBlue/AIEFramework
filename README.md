@@ -1,6 +1,6 @@
 AIEFramework
 ============
-=============== updated 14/8/2015 for VS2013 to remove glew dependacnies in place of GL core 4_4 ================
+==== updated 14/8/2015 for VS2013 to remove glew dependacnies in place of GL core 4_4 ====
 
 The AIE C++ OpenGL Framework, used by Advanced Diploma and Degree students. This repo is in constant flux and improvement. Differences may exist between this code-base and class tutorials.
 
@@ -20,8 +20,8 @@ Dependencies:
 
   - OpenGl core using OpenGL Loader Generator - version 4_4
   - GLFW (for managing basic OpenGL window and controls)
-  - GLM (for mathematics)
-  - STB (for simple image loading) - updated with scalar fix see https://github.com/g-truc/glm/issues/325
+  - GLM (for mathematics) - apply scalar fix from https://github.com/g-truc/glm/issues/325
+  - STB (for simple image loading) 
   - FBX SDK 2015.1 (for the optional FBXLoader library for loading FBX models)
  
 Setup:
