@@ -1,5 +1,6 @@
 #include "Gizmos.h"
-#include <GL/glew.h>
+//#include <GL/glew.h>
+#include <gl_core_4_4.h>
 #include <glm/ext.hpp>
 
 Gizmos* Gizmos::sm_singleton = nullptr;

@@ -42,8 +42,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)..\Lib\vs2013\</OutDir>
     <TargetName>$(ProjectName)_d</TargetName>
-    <IncludePath>$(SolutionDir)../inc;$(SolutionDir)../dep/stb;$(SolutionDir)../dep/glfw/include;$(SolutionDir)../dep/glew/include;$(SolutionDir)../dep/glm;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)../lib;$(SolutionDir)../dep/glew/lib/Release/Win32;$(SolutionDir)../dep/glfw/src/$(Configuration);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>$(SolutionDir)../inc;$(SolutionDir)../dep/stb;$(SolutionDir)../dep/glfw-3.1.1.bin.WIN32/include;$(SolutionDir)../dep/glm;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(SolutionDir)../dep/gl_core4_4</IncludePath>
+    <LibraryPath>$(SolutionDir)../lib;$(SolutionDir)../dep/glfw-3.1.1.bin.WIN32/src/$(Configuration);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);$(SolutionDir)../dep/glfw-3.1.1.bin.WIN32/lib-vc2013</LibraryPath>
     <IntDir>$(Configuration)\vs2013\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -57,13 +57,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLM_SWIZZLE;GLM_FORCE_RADIANS;GLEW_STATIC;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLM_SWIZZLE;GLM_FORCE_RADIANS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>glfw3.lib;glew32s.lib;OpenGL32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;OpenGL32.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

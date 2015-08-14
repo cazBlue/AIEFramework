@@ -1,4 +1,5 @@
-#include <GL/glew.h>
+//#include <GL/glew.h>
+#include <gl_core_4_4.h>
 #include <glfw/glfw3.h>
 #include <stdio.h>
 #include <glm/ext.hpp>

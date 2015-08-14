@@ -3,7 +3,8 @@
 #include <string>
 #include <vector>
 #include <sstream>
-#include <GL/glew.h>
+//#include <GL/glew.h>
+#include <gl_core_4_4.h>
 #include <GLFW/glfw3.h>
 
 bool Application::create(const char* a_name, int a_width, int a_height, int a_argc, char* a_argv[])
@@ -36,11 +37,10 @@ bool Application::create(const char* a_name, int a_width, int a_height, int a_ar
 	glfwMakeContextCurrent(m_window);
 
 	// initialise glew systems to wrangle GL extensions
-    glewExperimental = GL_TRUE;
-	if (glewInit() != GLEW_OK)
-	{
+	if (ogl_LoadFunctions() == ogl_LOAD_FAILED) {
+		glfwDestroyWindow(m_window);
 		glfwTerminate();
-		return false;
+		return -3;
 	}
 	
 	// simply resize the GL viewport when the window size changes

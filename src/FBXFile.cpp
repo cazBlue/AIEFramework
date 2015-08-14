@@ -4,8 +4,9 @@
 #include <set>
 
 // only needed for texture cleanup
-#define GLEW_NO_GLU
-#include <GL/glew.h>
+//#define GLEW_NO_GLU
+//#include <GL/glew.h>
+#include <gl_core_4_4.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
