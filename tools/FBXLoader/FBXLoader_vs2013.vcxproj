@@ -55,7 +55,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)..\lib\vs2013\</OutDir>
-    <IncludePath>$(FBX_SDK_DIR)include;$(SolutionDir)../inc;$(SolutionDir)../dep/stb;$(SolutionDir)../dep/glfw/include;$(SolutionDir)../dep/glew/include;$(SolutionDir)../dep/glm;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(FBX_SDK_DIR)include;$(SolutionDir)../inc;$(SolutionDir)../dep/stb;$(SolutionDir)../dep/glfw/include;$(SolutionDir)../dep/glm;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(SolutionDir)../dep/gl_core4_4</IncludePath>
     <LibraryPath>$(FBX_SDK_DIR)lib\vs2013\x86\release;$(SolutionDir)../lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86)</LibraryPath>
     <IntDir>$(Configuration)\vs2013\</IntDir>
   </PropertyGroup>
@@ -90,7 +90,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLM_SWIZZLE;GLM_FORCE_RADIANS;GLEW_STATIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLM_SWIZZLE;GLM_FORCE_RADIANS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
