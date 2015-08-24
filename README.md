@@ -1,6 +1,7 @@
 AIEFramework
 ============
 ==== updated 14/8/2015 for VS2013 to remove glew dependacnies in place of GL core 4_4 ====
+====NOTE: this fork is unstable and causes memory corruption in it's current state... don't use! ====
 
 The AIE C++ OpenGL Framework, used by Advanced Diploma and Degree students. This repo is in constant flux and improvement. Differences may exist between this code-base and class tutorials.
 
