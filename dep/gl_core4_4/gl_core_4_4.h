@@ -26,9 +26,6 @@
 #define __gltypes_h_
 #define __gl_ATI_h_
 
-#define GL_LUMINANCE 0x1909
-#define GL_LUMINANCE_ALPHA 0x190A
-
 #ifndef APIENTRY
 	#if defined(__MINGW32__)
 		#ifndef WIN32_LEAN_AND_MEAN
